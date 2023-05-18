@@ -1,8 +1,8 @@
 "use client";
 
-import { Button } from "ui";
+import { Button } from "ui/atoms";
 
-import "../styles/globals.css";
+import "../../../packages/ui/styles/globals.css";
 
 export default function Page() {
   const clickHandler = () => {

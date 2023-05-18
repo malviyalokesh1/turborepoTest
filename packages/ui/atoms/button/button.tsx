@@ -1,9 +1,7 @@
-import React, { ReactNode, MouseEvent } from "react";
-
-import classnames from "classnames";
 type ButtonVariant = "primary" | "outline" | "light" | "dark";
+import classnames from "classnames";
 
-
+import React, { ReactNode, MouseEvent } from "react";
 interface ButtonProps {
   className?: string;
   disabled?: boolean;
