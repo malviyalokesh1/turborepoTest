@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* #region  /**=========== Primary Color =========== */
+  --tw-color-primary-solid: #fdd771;
+  --tw-color-primary-light: #feefc6;
+  --tw-color-primary-dark: #fccf55;
+  --color-primary-solid: rgb(var(--tw-color-primary-solid));
+  --color-primary-light: rgb(var(--tw-color-primary-light));
+  --color-primary-dark: rgb(var(--tw-color-primary-dark));
+  /* #endregion  /**======== Primary Color =========== */
+}

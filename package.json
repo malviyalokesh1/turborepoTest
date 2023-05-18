@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^2.5.1",
+    "turbo": "^1.9.3"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "name": "my-turborepo",
+  "dependencies": {
+    "classnames": "^2.3.2"
+  }
+}
