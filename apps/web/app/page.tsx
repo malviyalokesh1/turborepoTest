@@ -20,7 +20,7 @@ export default function Page() {
           variant="light"
           clickHandler={clickHandler}
           children="Boop"
-          className="text-black"
+          className="!text-black"
         />
         <Button
           variant="dark"
