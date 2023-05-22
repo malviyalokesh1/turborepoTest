@@ -36,8 +36,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
       className={classnames(
         'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2',
         {
-          'text-white':
-            variant && ['primary', 'outline', 'dark'].indexOf(variant) !== -1,
+          'text-white': variant && ['primary', 'dark'].indexOf(variant) !== -1,
           'text-black': variant === 'light',
           'text-primary-dark': variant === 'outline',
         }
