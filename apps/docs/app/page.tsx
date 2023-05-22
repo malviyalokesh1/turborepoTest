@@ -2,7 +2,7 @@
 
 import { Button } from 'ui/atoms';
 
-import '../../../packages/ui/styles/globals.css';
+import 'ui/styles/globals.css';
 
 export default function Page() {
   const clickHandler = () => {
@@ -12,12 +12,7 @@ export default function Page() {
   return (
     <div className='flex flex-col items-center justify-center h-screen w-screen bg-yellow-50'>
       <div className='flex items-center justify-evenly h-1/4 w-full'>
-        <Button
-          variant='primary'
-          clickHandler={clickHandler}
-          children='Boop'
-          isLoading
-        />
+        <Button variant='primary' clickHandler={clickHandler} children='Boop' />
         <Button variant='outline' clickHandler={clickHandler} children='Boop' />
       </div>
       <div className='flex items-center justify-evenly h-1/4 w-full'>

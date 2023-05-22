@@ -23,54 +23,34 @@ export const Primary: Story = {
     variant: "primary",
     text: 'Button',
     isLoading: false,
+    disabled: false
   },
 };
-export const PrimaryLoading: Story = {
-  args: {
-    variant: "primary",
-    text: 'Button',
-    isLoading: true,
-  },
-};
+
 export const Outlined: Story = {
   args: {
     variant: "outline",
     text: 'Button',
     isLoading: false,
+    disabled: false
   },
 };
-export const OutlinedLoading: Story = {
-  args: {
-    variant: "outline",
-    text: 'Button',
-    isLoading: true,
-  },
-};
+
 export const Light: Story = {
   args: {
     variant: "light",
     text: 'Button',
     isLoading: false,
+    disabled: false
   },
 };
-export const LightLoading: Story = {
-  args: {
-    variant: "light",
-    text: 'Button',
-    isLoading: true,
-  },
-};
+
 export const Dark: Story = {
   args: {
     variant: "dark",
     text: 'Button',
     isLoading: false,
+    disabled: false
   },
 };
-export const DarkLoading: Story = {
-  args: {
-    variant: "dark",
-    text: 'Button',
-    isLoading: true,
-  },
-};
+
