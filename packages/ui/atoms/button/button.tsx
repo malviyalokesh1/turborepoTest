@@ -28,7 +28,8 @@ export const Button: React.FC<ButtonProps> = (props) => {
     isLoading,
   } = props;
 
-  const childComp: string | ReactNode | undefined = text || children;
+  const childComp: string | ReactNode | undefined =
+    !isLoading && (text || children);
 
   const loadingComp = isLoading && (
     <div
