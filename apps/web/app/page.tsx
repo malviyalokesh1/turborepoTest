@@ -1,5 +1,4 @@
 'use client';
-
 import { Button } from 'ui/atoms';
 
 import '../../../packages/ui/styles/globals.css';
