@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from 'ui/atoms'
+import { Button } from './button'
 
 // type ButtonVariant = 'primary' | 'outline' | 'light' | 'dark';
 
