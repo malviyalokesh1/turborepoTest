@@ -11,22 +11,24 @@ export default function Page() {
   return (
     <div className='flex flex-col items-center justify-center h-screen w-screen bg-purple-50'>
       <div className='flex items-center justify-evenly h-1/4 w-full'>
-        <Button variant='primary' clickHandler={clickHandler} children='Boop' />
-        <Button variant='outline' clickHandler={clickHandler} children='Boop' />
+        <Button variant='primary' clickHandler={clickHandler}>
+          Booop
+        </Button>
+        <Button variant='outline' clickHandler={clickHandler}>
+          Booop
+        </Button>
       </div>
       <div className='flex items-center justify-evenly h-1/4 w-full'>
         <Button
           variant='light'
           clickHandler={clickHandler}
-          children='Boop'
           className='!text-black'
-        />
-        <Button
-          variant='dark'
-          clickHandler={clickHandler}
-          children='Boop'
-          disabled
-        />
+        >
+          Booop
+        </Button>
+        <Button variant='dark' clickHandler={clickHandler} disabled>
+          Booop
+        </Button>
       </div>
     </div>
   );

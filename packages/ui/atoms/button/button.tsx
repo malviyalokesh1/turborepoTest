@@ -23,7 +23,6 @@ export const Button: React.FC<ButtonProps> = (props) => {
     text,
     children,
     clickHandler,
-    params,
     variant,
     isLoading,
   } = props;
