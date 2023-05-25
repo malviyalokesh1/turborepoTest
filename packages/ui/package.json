@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build": "storybook build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "7.0.14",

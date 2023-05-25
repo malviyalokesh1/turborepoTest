@@ -8,7 +8,18 @@ echo 'please be patient, this may take a while...'
 pnpm lint ||
 (
     echo '🔨❌ Yoo, you have a problem in your code. Check linter 🔨❌
-    Run yarn lint, add changes and try commit again.';
+    Run pnpm lint, add changes and try commit again.';
+    false;
+)
+
+echo '🏗️👷 Building your project before committing👷‍♂️🏗️'
+echo 'please be patient, this may take a while...'
+
+# Check builds
+pnpm build ||
+(
+    echo '🔨❌ Yoo, you have a problem in your code. Check builds 🔨❌
+    Run pnpm build, add changes and try commit again.';
     false;
 )
 
