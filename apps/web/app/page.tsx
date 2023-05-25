@@ -4,8 +4,8 @@ import { Button } from 'ui/atoms';
 import '../../../packages/ui/styles/globals.css';
 
 export default function Page() {
-  const clickHandler = () => {
-    alert('Booop form web!');
+  const clickHandler = (prop) => {
+    alert(`${prop} form docs!`);
   };
 
   return (
@@ -14,22 +14,24 @@ export default function Page() {
         <h1 className='text-9xl text-black font-bold'>Hi there, I'm Web!</h1>
       </div>
       <div className='flex items-center justify-evenly h-1/4 w-1/2'>
-        <Button variant='primary' clickHandler={clickHandler}>
-          Boop
-        </Button>
-        <Button variant='outline' clickHandler={clickHandler}>
-          Boop
-        </Button>
+        <Button
+          variant='primary'
+          clickHandler={() => clickHandler('Boooooooop')}
+          text='Boop'
+        />
+        <Button
+          variant='outline'
+          clickHandler={() => clickHandler('Boooooooop')}
+          text='Boop'
+        />
         <Button
           variant='light'
-          clickHandler={clickHandler}
+          clickHandler={() => clickHandler('Beeeeeeeep')}
+          text='Beep'
           className='!text-black'
-        >
-          Beep
-        </Button>
-        <Button variant='dark' clickHandler={clickHandler} disabled>
-          Beep
-        </Button>
+        />
+
+        <Button variant='dark' text='Shhhh!!' disabled />
       </div>
     </div>
   );
