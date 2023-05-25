@@ -13,6 +13,9 @@ coverage
 out/
 build
 
+# storybook builds
+storybook-static/
+
 # misc
 .DS_Store
 *.pem
