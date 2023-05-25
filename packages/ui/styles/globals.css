@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   /* #region  /**=========== Primary Color =========== */
-  --tw-color-primary-solid: #7840b2;
+  --tw-color-primary-solid: #5b2ebc;
   --tw-color-primary-light: #7840b21c;
-  --tw-color-primary-dark: #542f7b;
+  --tw-color-primary-dark: #2e175e;
   --color-primary-solid: rgb(var(--tw-color-primary-solid));
   --color-primary-light: rgb(var(--tw-color-primary-light));
   --color-primary-dark: rgb(var(--tw-color-primary-dark));

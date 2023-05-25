@@ -11,6 +11,9 @@ export default function Page() {
 
   return (
     <div className='flex flex-col items-center justify-center h-screen w-screen bg-yellow-50'>
+      <div className='flex flex-col items-center justify-evenly h-1/4 w-full'>
+        <h1 className='text-3xl text-cyan-950 font-bold'>Hi, I'm Doc!</h1>
+      </div>
       <div className='flex items-center justify-evenly h-1/4 w-full'>
         <Button variant='primary' clickHandler={clickHandler}>
           Booop
