@@ -1,12 +1,7 @@
 'use client';
-import { Metadata } from 'next';
 import { Button } from 'ui/atoms';
 
 import 'ui/styles/globals.css';
-
-export const metadata: Metadata = {
-  title: 'Docs - Turborepo',
-};
 
 export default function Page() {
   const clickHandler = () => {
