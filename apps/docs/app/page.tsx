@@ -1,8 +1,12 @@
 'use client';
-
+import { Metadata } from 'next';
 import { Button } from 'ui/atoms';
 
 import 'ui/styles/globals.css';
+
+export const metadata: Metadata = {
+  title: 'Docs - Turborepo',
+};
 
 export default function Page() {
   const clickHandler = () => {
@@ -10,28 +14,26 @@ export default function Page() {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center h-screen w-screen bg-yellow-50'>
+    <div className='flex flex-col items-center justify-center h-screen w-screen bg-red-50'>
       <div className='flex flex-col items-center justify-evenly h-1/4 w-full'>
-        <h1 className='text-3xl text-cyan-950 font-bold'>Hi, I'm Doc!</h1>
+        <h1 className='text-9xl text-black font-bold'>Hi there, I'm Doc!</h1>
       </div>
-      <div className='flex items-center justify-evenly h-1/4 w-full'>
+      <div className='flex items-center justify-evenly h-1/4 w-1/2'>
         <Button variant='primary' clickHandler={clickHandler}>
-          Booop
+          Boop
         </Button>
         <Button variant='outline' clickHandler={clickHandler}>
-          Booop
+          Boop
         </Button>
-      </div>
-      <div className='flex items-center justify-evenly h-1/4 w-full'>
         <Button
           variant='light'
           clickHandler={clickHandler}
           className='!text-black'
         >
-          Booop
+          Beep
         </Button>
         <Button variant='dark' clickHandler={clickHandler} disabled>
-          Booop
+          Beep
         </Button>
       </div>
     </div>
