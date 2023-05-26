@@ -3,8 +3,12 @@ import React from 'react';
 
 import { Button } from './button';
 
-test('Header contains correct text', () => {
-  render(<Button text='hi' variant='primary' />);
-  const text = screen.getByText('hi');
-  expect(text).toBeInTheDocument();
+describe('Button contains correct text', () => {
+  it('renders a button', () => {
+    render(<Button text='hi' variant='primary' />);
+
+    const heading = screen.getByText('hi');
+
+    expect(heading).toBeInTheDocument();
+  });
 });
