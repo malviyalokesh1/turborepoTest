@@ -5,7 +5,8 @@
     "dev": "turbo run dev --no-daemon",
     "lint": "turbo run lint --no-daemon",
     "storybook": "turbo run storybook --filter=ui",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
