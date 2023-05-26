@@ -12,6 +12,17 @@ pnpm lint ||
     false;
 )
 
+echo '🏗️👷 Running tests for your project before committing👷‍♂️🏗️'
+echo 'please be patient, this may take a while...'
+
+# Check ESLint Standards
+pnpm test ||
+(
+    echo '🔨❌ Yoo, you have a problem in your code. Check tests 🔨❌
+    Run pnpm test, add changes and try commit again.';
+    false;
+)
+
 echo '🏗️👷 Building your project before committing👷‍♂️🏗️'
 echo 'please be patient, this may take a while...'
 
