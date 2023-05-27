@@ -82,4 +82,10 @@ Learn more about the power of Turborepo:
 
 ## In case of module issue
 
+## Force reinstall dependencies: refetch packages modified in store, recreate a lockfile and/or modules directory created by a non-compatible version of pnpm. Install all optionalDependencies even they don't satisfy the current environment(cpu, os, arch)
+
 pnpm install --force
+
+## Perform an install removing older dependencies in the lockfile if a newer version can be used
+
+pnpm dedupe
