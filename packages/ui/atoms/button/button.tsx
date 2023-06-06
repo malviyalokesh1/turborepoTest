@@ -5,7 +5,7 @@ import { ImSpinner2 } from 'react-icons/im';
 // Button props
 type ButtonVariant = 'primary' | 'outline' | 'light' | 'dark';
 
-interface ButtonProps {
+export interface ButtonProps {
   className?: string;
   disabled?: boolean;
   text?: any;
