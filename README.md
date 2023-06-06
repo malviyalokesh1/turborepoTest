@@ -83,3 +83,9 @@ Learn more about the power of Turborepo:
 ## In case of module issue
 
 pnpm install --force
+
+## Pre-commit config for mac OS
+
+```
+chmod ug+x .husky/*
+```
